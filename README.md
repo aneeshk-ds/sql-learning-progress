@@ -1,22 +1,24 @@
 # 📚 SQL Learning Progress
 
-This repository tracks daily SQL learning progress through structured topics, exercises, and interview-style problems.
+This repository showcases progressive SQL skills for data analysis,
+from fundamentals to advanced analytics queries.
 
-## 🔥 Topics Covered
-- SQL Basics (SELECT, WHERE, ORDER BY, GROUP BY)
-- Aggregations
-- Joins (inner, left, right, full, cross)
-- Subqueries (basic + correlated)
-- Window Functions (rank, dense_rank, lead, lag)
-- Case When
-- Practice Questions (easy/medium/hard)
-- Database Setup Scripts
+## Skills Covered
+- SQL Basics (SELECT, WHERE, ORDER BY)
+- Joins & Relationships
+- Aggregations & Grouping
+- Subqueries & CTEs
+- Window Functions
+- Data Cleaning
+- Business Analytics Use Cases
 
-## 📂 Folder Structure
-See topic-specific folders inside this repository.
+## How to Read This Repo
+Folders are ordered by difficulty.
+Each folder contains standalone SQL scripts with clear problem statements.
 
-## 🚀 Usage
-Run the `.sql` files on PostgreSQL / MySQL / SQLite to practice daily.
+## Tech
+- PostgreSQL (syntax)
+- Works on MySQL with minor changes
 
-## 🤝 Contributions
-This is a personal learning repository. Suggestions welcome!
+## Author
+Aneesh Kumar
