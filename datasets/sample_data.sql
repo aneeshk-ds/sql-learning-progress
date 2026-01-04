@@ -20,3 +20,25 @@ INSERT INTO orders VALUES
 (101, 1, '2024-01-10', 2500),
 (102, 1, '2024-01-15', 1500),
 (103, 2, '2024-02-01', 3000);
+
+
+-- Drop table if it already exists (safe re-runs)
+DROP TABLE IF EXISTS Employees;
+
+-- Create Employees table
+CREATE TABLE Employees (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50) NOT NULL,
+    salary INT NOT NULL,
+    department VARCHAR(30) NOT NULL
+);
+
+
+-- Insert sample employee data
+INSERT INTO Employees (emp_id, emp_name, salary, department) VALUES
+(1, 'Alice',   60000, 'IT'),
+(2, 'Bob',     45000, 'HR'),
+(3, 'Charlie', 75000, 'IT'),
+(4, 'Diana',   50000, 'Finance'),
+(5, 'Ethan',   55000, 'HR');
+
