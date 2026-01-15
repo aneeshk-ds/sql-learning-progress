@@ -42,3 +42,20 @@ INSERT INTO Employees (emp_id, emp_name, salary, department) VALUES
 (4, 'Diana',   50000, 'Finance'),
 (5, 'Ethan',   55000, 'HR');
 
+
+-- Drop table if it exists
+DROP TABLE IF EXISTS Departments;
+
+-- Create Departments table
+CREATE TABLE Departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(30) NOT NULL
+);
+
+
+-- Insert sample department data
+INSERT INTO Departments (department_id, department_name) VALUES
+(1, 'IT'),
+(2, 'HR'),
+(3, 'Finance'),
+(4, 'Marketing');
