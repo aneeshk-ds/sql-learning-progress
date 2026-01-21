@@ -59,3 +59,14 @@ INSERT INTO Departments (department_id, department_name) VALUES
 (2, 'HR'),
 (3, 'Finance'),
 (4, 'Marketing');
+
+
+-- Create Locations table
+
+CREATE TABLE Locations (
+    location_id INT PRIMARY KEY,
+    city VARCHAR(50) NOT NULL,
+    department_id INT NOT NULL,
+    FOREIGN KEY (department_id) REFERENCES Departments(department_id)
+);
+
