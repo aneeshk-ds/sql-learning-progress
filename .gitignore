@@ -1,0 +1,13 @@
+# Private training materials. Never publish to the public repo.
+.DS_Store
+About_Me.md
+Communication_Style.md
+Delegations.md
+Execution_Rules.md
+Safety_Defaults.md
+Working_Preferences.md
+council-SKILL.md
+SQL_Tracker.md
+SQL_Tracker_backup_*.md
+sql-practice-coach/
+SQL_Roadmap.md
