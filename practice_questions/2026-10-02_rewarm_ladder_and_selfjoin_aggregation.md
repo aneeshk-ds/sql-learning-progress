@@ -158,3 +158,44 @@ A SELECT leaves every row in place and fails, however correct the rows on screen
 - 627 Swap Sex of Employees: the UPDATE twin. Also never written.
 - Two-layer aggregate: taught once, needs 2 cold reps on fresh data.
 - Ledger #19 self-join under aggregation: 2 of 3 clean, 1 more to close.
+
+---
+
+# Second block, same day
+
+Continued past the first wrap. Coached volume on real list problems, not Gate A.
+
+## 1069 Product Sales Analysis II — failed twice, clean on the third
+
+See `03_aggregations/leetcode_1069_product_sales_analysis_ii.sql`.
+
+**Join-justification rule, found here.** Before writing a join, list the output columns and name
+which table each one lives in. A join is earned only when a needed column sits in another table.
+Both output columns lived in `Sales`, so no join was earned. The unneeded join is also what made
+`product_id` ambiguous, so one rule prevents both faults.
+
+Second attempt dropped the join and dropped `GROUP BY` with it. Mistake #8, sixth fire, on the
+same plain-aggregate shape cleared first-try on rung 2 two hours earlier.
+
+## 1083 Sales Analysis II — failed, solution shown
+
+See `02_joins/leetcode_1083_sales_analysis_ii.sql`.
+
+**Row vs entity test, new ledger #22.** Can ONE row, alone, answer this condition?
+
+- "bought S8" — yes, one row settles it. That is a `WHERE` clause.
+- "did not buy iPhone" — no. No single row knows what else that buyer did. That is a count
+  condition in `HAVING` over the buyer's group, or a second list compared with `NOT IN`.
+
+`WHERE product_name = 'S8' AND product_name != 'iPhone'` is a no-op in its second half, because
+one row cannot hold two products. Every S8 buyer passes, including those who also bought iPhone.
+
+Could not recall `NOT IN` or `LEFT JOIN + IS NULL`, nine days after clearing both twice on
+2026-09-23. Ledger #10 needs reactivation before Gate A.
+
+## Day total
+
+13 problems posed, 6 first-try clean, 46%. Gate A needs 80%.
+
+The GROUP BY and HAVING work drilled on the day held. Everything older than a week did not.
+The bottleneck is retention, not comprehension.
