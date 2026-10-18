@@ -1,0 +1,18 @@
+-- LeetCode 586 Customer Placing the Largest Number of Orders (Easy, 65%)
+-- 2026-10-18, Mock 1 Q3 (Lloyds format, first submission final). MISS, 12 minutes.
+-- STATUS: open. Rewrite pending, cold, next session (ledger #26).
+--
+-- Submitted:
+-- select customer_number
+-- from Orders
+-- group by customer_number
+-- having count(*)
+-- order by customer_number desc
+-- limit 1
+--
+-- What went wrong:
+-- 1. ORDER BY sorts by the customer's id, not by how many orders the customer has.
+--    On the 4 sample rows the highest id also had the most orders, so it passed by luck.
+--    On fresh rows (customer 1 with 3 orders) it returned customer 3.
+-- 2. HAVING count(*) has no comparison, so every group passes; the line does nothing.
+-- Gap: ORDER BY can sort by an aggregate. Card built on the bench (CityOrders, SUM).
